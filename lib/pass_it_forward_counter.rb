@@ -12,6 +12,8 @@ class PassItForwardCounter
     @@result
   end
 
+  private
+
   def increment
     if @@result < @target
       PassItForwardCounter.new(target: @target)
